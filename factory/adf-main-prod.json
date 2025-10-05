@@ -1,0 +1,9 @@
+{
+	"name": "adf-main-prod",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "80edc222-ca5b-4364-ac7e-de26a0962084",
+		"tenantId": "efc76c4b-84a1-487e-9b7b-0b49af33119b"
+	}
+}
