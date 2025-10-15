@@ -1,0 +1,157 @@
+{
+	"name": "FileServerExcel1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Gap Summary",
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "Alignment.xlsx"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "IPA",
+				"type": "String"
+			},
+			{
+				"name": "Member ID",
+				"type": "String"
+			},
+			{
+				"name": "Member Name",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "DOB",
+				"type": "String"
+			},
+			{
+				"name": "Member Phone#",
+				"type": "String"
+			},
+			{
+				"name": "PCP Name",
+				"type": "String"
+			},
+			{
+				"name": "PCP NPI",
+				"type": "String"
+			},
+			{
+				"name": "Total Gaps",
+				"type": "String"
+			},
+			{
+				"name": "BCS",
+				"type": "String"
+			},
+			{
+				"name": "EED",
+				"type": "String"
+			},
+			{
+				"name": "GSD",
+				"type": "String"
+			},
+			{
+				"name": "CBP",
+				"type": "String"
+			},
+			{
+				"name": "COL",
+				"type": "String"
+			},
+			{
+				"name": "OMW",
+				"type": "String"
+			},
+			{
+				"name": "SPC",
+				"type": "String"
+			},
+			{
+				"name": "COA MDR",
+				"type": "String"
+			},
+			{
+				"name": "COA FSA",
+				"type": "String"
+			},
+			{
+				"name": "COA PNS",
+				"type": "String"
+			},
+			{
+				"name": "SUPD",
+				"type": "String"
+			},
+			{
+				"name": "TRC PATIENT",
+				"type": "String"
+			},
+			{
+				"name": "TRC MRP",
+				"type": "String"
+			},
+			{
+				"name": "KED",
+				"type": "String"
+			},
+			{
+				"name": "FMC",
+				"type": "String"
+			},
+			{
+				"name": "PCR",
+				"type": "String"
+			},
+			{
+				"name": "RAS",
+				"type": "String"
+			},
+			{
+				"name": "Statin",
+				"type": "String"
+			},
+			{
+				"name": "Diabetes",
+				"type": "String"
+			},
+			{
+				"name": "PCP Visit",
+				"type": "String"
+			},
+			{
+				"name": "AHC Visit",
+				"type": "String"
+			},
+			{
+				"name": "Specialist Visit",
+				"type": "String"
+			},
+			{
+				"name": "Specialist Type",
+				"type": "String"
+			},
+			{
+				"name": "Other Visit",
+				"type": "String"
+			},
+			{
+				"name": "SNP HRA Completed",
+				"type": "String"
+			}
+		]
+	}
+}
