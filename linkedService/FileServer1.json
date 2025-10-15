@@ -1,0 +1,17 @@
+{
+	"name": "FileServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "\\\\192.168.12.129\\gic",
+			"userId": "desktop-dj40kjj\\adfuser",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlZTlkZjdkZC1jYmU2LTRlMTgtYTMyMC04ODRlZjlmZjI2ZWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "LocalSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
