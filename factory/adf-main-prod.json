@@ -1,5 +1,10 @@
 {
 	"name": "adf-main-prod",
+	"properties": {
+		"globalConfigurations": {
+			"PolicyValidationEnabled": "true"
+		}
+	},
 	"location": "westus",
 	"identity": {
 		"type": "SystemAssigned",
