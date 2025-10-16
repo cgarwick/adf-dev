@@ -15,7 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "FileServerLocation",
-				"fileName": "@dataset().FileName",
+				"fileName": {
+					"value": "@if(empty(dataset().FileName), '', dataset().FileName)\n",
+					"type": "Expression"
+				},
 				"folderPath": "Test"
 			},
 			"columnDelimiter": ",",
