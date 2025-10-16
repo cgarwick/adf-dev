@@ -5,11 +5,17 @@
 			"referenceName": "FileServer1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "FileServerLocation",
+				"fileName": "@dataset().FileName",
 				"folderPath": "Test"
 			},
 			"columnDelimiter": ",",
