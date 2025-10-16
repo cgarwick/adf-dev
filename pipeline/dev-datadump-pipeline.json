@@ -50,7 +50,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@endsWith(item().name, '.csv')\n",
+						"value": "@endsWith(item().name, '.txt')\n",
 						"type": "Expression"
 					}
 				}
