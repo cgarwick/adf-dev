@@ -50,12 +50,50 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(\n  substring(item().name, sub(length(item().name), 8), 8),\n  '20251015'\n)\n",
+						"value": "@equals(\n  substring(item().name, sub(length(item().name), 12), 8),\n  formatDateTime(addHours(utcNow(), -8), 'yyyyMMdd')\n)\n",
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [
+					{
+						"activity": "GetFiles",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('GetFiles').output.childItems\n",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "DebugOutput",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "DebugOutput",
+								"value": "@string(item())\n"
+							}
+						}
+					]
+				}
 			}
 		],
+		"variables": {
+			"DebugOutput": {
+				"type": "Array"
+			}
+		},
 		"annotations": []
 	}
 }
