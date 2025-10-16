@@ -146,8 +146,11 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DataDump",
-									"type": "DatasetReference"
+									"referenceName": "DataDumpFiltered",
+									"type": "DatasetReference",
+									"parameters": {
+										"FileName": "@item().name"
+									}
 								}
 							],
 							"outputs": [
