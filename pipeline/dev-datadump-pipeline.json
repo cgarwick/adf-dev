@@ -17,13 +17,10 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DataDump",
-						"type": "DatasetReference",
-						"parameters": {
-							"FileName": "''"
-						}
+						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"lastModified"
+						"childItems"
 					],
 					"storeSettings": {
 						"type": "FileServerReadSettings",
@@ -150,10 +147,7 @@
 							"inputs": [
 								{
 									"referenceName": "DataDump",
-									"type": "DatasetReference",
-									"parameters": {
-										"FileName": "@item().name"
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
