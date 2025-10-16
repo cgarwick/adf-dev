@@ -33,7 +33,7 @@
 				}
 			},
 			{
-				"name": "FilterNewFiles",
+				"name": "FilterFiles",
 				"type": "Filter",
 				"dependsOn": [
 					{
@@ -50,7 +50,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@and(\n  greaterOrEquals(item().lastModified, addMinutes(utcNow(), -20)),\n  endsWith(item().name, '.csv')\n)",
+						"value": "@endsWith(item().name, '.csv')\n",
 						"type": "Expression"
 					}
 				}
