@@ -1,0 +1,27 @@
+{
+	"name": "WrapperTest",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "dev-datadump-recpipeline",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"folderPath": "/Test"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
