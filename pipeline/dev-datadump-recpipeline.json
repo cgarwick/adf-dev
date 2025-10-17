@@ -74,7 +74,7 @@
 										"userProperties": [],
 										"typeProperties": {
 											"pipeline": {
-												"referenceName": "WrapperTest",
+												"referenceName": "dev-datadump-recpipeline-wrapper",
 												"type": "PipelineReference"
 											},
 											"waitOnCompletion": true
@@ -90,6 +90,11 @@
 		"parameters": {
 			"folderPath": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"fileList": {
+				"type": "Array"
 			}
 		},
 		"annotations": []

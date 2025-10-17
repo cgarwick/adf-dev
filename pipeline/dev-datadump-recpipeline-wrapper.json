@@ -1,5 +1,5 @@
 {
-	"name": "WrapperTest",
+	"name": "dev-datadump-recpipeline-wrapper",
 	"properties": {
 		"activities": [
 			{
@@ -15,10 +15,7 @@
 						"referenceName": "dev-datadump-recpipeline",
 						"type": "PipelineReference"
 					},
-					"waitOnCompletion": true,
-					"parameters": {
-						"folderPath": "/Test"
-					}
+					"waitOnCompletion": true
 				}
 			}
 		],
