@@ -84,8 +84,7 @@
 		],
 		"parameters": {
 			"folderPath": {
-				"type": "string",
-				"defaultValue": "Test"
+				"type": "string"
 			}
 		},
 		"annotations": []
