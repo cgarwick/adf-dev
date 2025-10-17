@@ -16,8 +16,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DataDump",
-						"type": "DatasetReference"
+						"referenceName": "DataDumpRec",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "@pipeline().parameters.folderPath"
+						}
 					},
 					"fieldList": [
 						"childItems"
