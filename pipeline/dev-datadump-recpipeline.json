@@ -27,6 +27,7 @@
 					],
 					"storeSettings": {
 						"type": "FileServerReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -72,6 +73,10 @@
 										},
 										"userProperties": [],
 										"typeProperties": {
+											"pipeline": {
+												"referenceName": "WrapperTest",
+												"type": "PipelineReference"
+											},
 											"waitOnCompletion": true
 										}
 									}
