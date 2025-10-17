@@ -35,7 +35,7 @@
 				}
 			},
 			{
-				"name": "FolderLoop",
+				"name": "ProcessChildItems",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -45,7 +45,41 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('GetFolderMetadata').output.childItems\n",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "IsFolderCheck",
+							"type": "IfCondition",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@equals(item().type, 'Folder')\n",
+									"type": "Expression"
+								},
+								"ifTrueActivities": [
+									{
+										"name": "RecurseIntoFolder",
+										"type": "ExecutePipeline",
+										"dependsOn": [],
+										"policy": {
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"waitOnCompletion": true
+										}
+									}
+								]
+							}
+						}
+					]
+				}
 			}
 		],
 		"parameters": {
