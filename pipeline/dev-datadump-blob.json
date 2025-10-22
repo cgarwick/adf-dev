@@ -16,7 +16,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"packageLocation": {
+						"packagePath": "DD2ADF/SSISAzure/Package.dtsx",
 						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "SSISRuntime",
+						"type": "IntegrationRuntimeReference"
 					},
 					"loggingLevel": "Basic"
 				}
