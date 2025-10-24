@@ -3,7 +3,9 @@
 	"properties": {
 		"globalConfigurations": {
 			"PolicyValidationEnabled": "true",
-			"PipelineBillingEnabled": "true"
+			"PipelineBillingEnabled": "true",
+			"factoryStagingLSReferenceName": "AzureBlobStorage1",
+			"factoryStagingLSType": "LinkedServiceReference"
 		}
 	},
 	"location": "westus",
